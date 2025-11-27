@@ -1,0 +1,46 @@
+.editor-container {
+  padding: 0;
+  background: #ffffff;
+  border-radius: 0 0 18px 18px;
+  min-height: 320px;
+  box-shadow: 0 2px 8px 0 #2563EB0b;
+  overflow: hidden;
+}
+
+.editor-textarea {
+  width: 100%;
+  height: 420px;
+  border: none;
+  outline: none;
+  resize: vertical;
+  font-size: 1.06rem;
+  background: #f9fafb;
+  color: #111827;
+  padding: 22px 18px;
+  border-radius: 0 0 18px 18px;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', 'Helvetica Neue', Arial, 'Liberation Sans', sans-serif;
+  box-shadow: none;
+  transition: background 0.12s, box-shadow 0.15s;
+}
+
+.editor-textarea:focus {
+  background: #fffbe7;
+  box-shadow: 0 1px 8px #F59E0B22, 0 0 0 1.5px #2563EB88;
+  outline: none;
+}
+
+@media (max-width: 1000px) {
+  .editor-textarea {
+    height: 220px;
+    min-height: 120px;
+  }
+}
+
+@media (max-width: 768px) {
+  .editor-textarea {
+    font-size: 0.97rem;
+    padding: 13px 6px;
+    border-radius: 0 0 8px 8px;
+  }
+}

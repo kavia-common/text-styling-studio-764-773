@@ -1,82 +1,60 @@
-# Lightweight React Template for KAVIA
+# Text Formatter – React
 
-This project provides a minimal React template with a clean, modern UI and minimal dependencies.
+A professional, browser-based text/markdown formatter featuring a live preview, Ocean Professional theme, keyboard shortcuts, and content persistence.
 
 ## Features
 
-- **Lightweight**: No heavy UI frameworks - uses only vanilla CSS and React
-- **Modern UI**: Clean, responsive design with KAVIA brand styling
-- **Fast**: Minimal dependencies for quick loading times
-- **Simple**: Easy to understand and modify
+- **Single-page app**: No backend required.
+- **Toolbar**: Format with Bold, Italic, Underline, Headings (H1-H3), Ordered/Unordered Lists, Blockquote, Code Block, Inline Code, Link, Clear Formatting, Undo, Redo.
+- **Markdown Input Editor**: Type or format your text, supports markdown or HTML for underline.
+- **Live Preview**: See output instantly, with professional Ocean theme styling.
+- **Keyboard Shortcuts**: Ctrl/Cmd+B (Bold), Ctrl/Cmd+I (Italic), Ctrl/Cmd+U (Underline), Ctrl/Cmd+Z/Y (Undo/Redo).
+- **Responsive Layout**: Side-by-side (desktop), stacked on mobile.
+- **Ocean Professional Style**: #2563EB blue, #F59E0B amber, gradients, surface backgrounds, subtle shadows and rounded corners.
+- **Persistence**: Content automatically persisted to localStorage.
+- **Undo/Redo**: Built-in stateful undo/redo within session.
 
-## Getting Started
+## Usage
 
-In the project directory, you can run:
+1. Clone and install dependencies (`npm install`)
+2. Start development server (`npm start`)
+3. Type or format text in the left panel. Results instantly appear on the right.
 
-### `npm start`
+## Toolbar Formatting
 
-Runs the app in development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-### `npm test`
-
-Launches the test runner in interactive watch mode.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+| Button       | Format                    | Markdown Example             | Keyboard Shortcut      |
+|--------------|---------------------------|------------------------------|-----------------------|
+| **B**        | Bold                      | `**bold**`                   | Ctrl/Cmd+B            |
+| *I*          | Italic                    | `*italic*`                   | Ctrl/Cmd+I            |
+| U            | Underline                 | `<u>underline</u>`           | Ctrl/Cmd+U            |
+| H1/H2/H3     | Heading 1/2/3             | `# Heading 1`                | none                  |
+| OL           | Ordered List              | `1. Item`                    | none                  |
+| UL           | Unordered List            | `- Item`                     | none                  |
+| “ ”          | Blockquote                | `> quoted`                   | none                  |
+| &lt;/&gt;    | Code Block                | <pre>```code```</pre>        | none                  |
+| code         | Inline Code               | `` `code` ``                 | none                  |
+| 🔗           | Link                      | `[text](url)`                | none                  |
+| Undo/Redo    | Undo/Redo                 |                              | Ctrl/Cmd+Z, Ctrl/Cmd+Y|
+| 🗑            | Clear Formatting          | Strips selection of markdown | none                  |
 
 ## Customization
 
-### Colors
+- **Theme**: Toggle dark/light with top right button.
+- **Persistence**: Text is saved in your browser (localStorage).
+- **Reset**: Clear formatting or delete all text manually.
 
-The main brand colors are defined as CSS variables in `src/App.css`:
+## Accessibility
 
-```css
-:root {
-  --kavia-orange: #E87A41;
-  --kavia-dark: #1A1A1A;
-  --text-color: #ffffff;
-  --text-secondary: rgba(255, 255, 255, 0.7);
-  --border-color: rgba(255, 255, 255, 0.1);
-}
-```
+- Toolbar buttons have accessible labels and tooltips.
+- Keyboard shortcuts work on editor focus.
+- Preview panel is focusable for copy.
 
-### Components
+## Dependencies
 
-This template uses pure HTML/CSS components instead of a UI framework. You can find component styles in `src/App.css`. 
+- React
+- [markdown-it](https://github.com/markdown-it/markdown-it) (for live preview rendering)
 
-Common components include:
-- Buttons (`.btn`, `.btn-large`)
-- Container (`.container`)
-- Navigation (`.navbar`)
-- Typography (`.title`, `.subtitle`, `.description`)
+## License
 
-## Learn More
+MIT
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
