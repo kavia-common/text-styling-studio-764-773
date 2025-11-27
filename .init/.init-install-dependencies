@@ -1,0 +1,4 @@
+{
+    "command": "npm install",
+    "working_directory": "/tmp/kavia/workspace/code-generation/text-styling-studio-764-773/text_formatter_frontend"
+}
